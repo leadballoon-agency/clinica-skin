@@ -7,6 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 CO2 laser treatment landing page for Clinica Skin Cambridge, built with Next.js 15 (App Router), TypeScript, and Tailwind CSS. Single-page marketing site with booking integration.
 
 **Domain**: co2lasercambridge.co.uk
+**Repository**: https://github.com/leadballoon-agency/clinica-skin
 **Clinic**: Clinica Skin Cambridge
 **Practitioner**: Dr. Katarzyna Molenda Wasilewska
 **Location**: 3-4 Sussex Street, Cambridge CB1 1PA
@@ -46,8 +47,9 @@ app/layout.tsx (metadata, fonts, analytics)
 
 Booking uses GoHighLevel (GHL) calendar embed:
 - `BookingModal.tsx` loads GHL calendar iframe (link.leadballoon.co.uk)
-- Offers video or in-clinic consultation options
-- Photo upload available for personalised assessment
+- Compact pill-style toggle for consultation type (Video / In-Clinic)
+- **In-Clinic is default** (includes SkinCeuticals digital skin scan)
+- Video option for remote initial assessments
 - Phone number click tracking via `FacebookPixel.tsx`
 
 ### SEO & Structured Data
