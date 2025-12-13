@@ -53,19 +53,56 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
           </svg>
         </button>
 
-        {/* Video Player */}
-        <div className="relative w-full h-full bg-black flex items-center justify-center">
-          <video
-            className="w-full h-full object-contain"
-            controls
-            autoPlay
-            playsInline
-          >
-            <source src="https://storage.googleapis.com/msgsndr/USJbaW3fRzevnqAcsm2W/media/691d9f2688e1e62bfb802755.mp4" type="video/mp4" />
-            <p className="text-white text-center p-4">
-              Your browser doesn't support video playback.
+        {/* Video Placeholder */}
+        <div className="relative w-full h-full bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 flex flex-col items-center justify-center p-8 text-center">
+          {/* Play icon */}
+          <div className="w-20 h-20 sm:w-24 sm:h-24 bg-white/20 backdrop-blur rounded-full flex items-center justify-center mb-6">
+            <svg className="w-10 h-10 sm:w-12 sm:h-12 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+
+          {/* Title */}
+          <h3 className="text-white text-2xl sm:text-3xl font-bold mb-3">
+            CO2 Laser Treatment
+          </h3>
+
+          {/* Description */}
+          <p className="text-white/90 text-sm sm:text-base mb-6 max-w-xs leading-relaxed">
+            Watch Dr. Katarzyna explain the CO2 laser resurfacing process and what results you can expect.
+          </p>
+
+          {/* Coming soon badge */}
+          <div className="bg-white/20 backdrop-blur px-4 py-2 rounded-full">
+            <p className="text-white text-sm font-medium">
+              Video Coming Soon
             </p>
-          </video>
+          </div>
+
+          {/* Suggested content */}
+          <div className="mt-8 pt-6 border-t border-white/20 w-full max-w-sm">
+            <p className="text-white/70 text-xs uppercase tracking-wider mb-3">This video will include:</p>
+            <ul className="text-white/80 text-sm space-y-2 text-left">
+              <li className="flex items-center">
+                <svg className="w-4 h-4 mr-2 text-white/60" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                How CO2 laser resurfacing works
+              </li>
+              <li className="flex items-center">
+                <svg className="w-4 h-4 mr-2 text-white/60" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Before & after results
+              </li>
+              <li className="flex items-center">
+                <svg className="w-4 h-4 mr-2 text-white/60" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                </svg>
+                Recovery timeline explained
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
