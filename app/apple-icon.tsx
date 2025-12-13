@@ -15,7 +15,7 @@ export default function AppleIcon() {
       <div
         style={{
           fontSize: 48,
-          background: 'linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%)',
+          background: 'linear-gradient(135deg, #5394CB 0%, #0056A7 100%)',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -26,7 +26,7 @@ export default function AppleIcon() {
           borderRadius: '20px',
         }}
       >
-        EC
+        CS
       </div>
     ),
     {

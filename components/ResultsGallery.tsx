@@ -21,36 +21,36 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       isModelCard: false
     },
     {
-      image: '/images/Acne Scarring Before and After.jpeg',
-      title: 'Acne Scarring',
-      description: 'Dramatic improvement in skin texture',
+      image: '/images/co2-laser-treatment-before-and-after7.jpg',
+      title: 'Skin Texture',
+      description: 'Smoother, firmer skin with improved clarity',
       time: 'Results Vary',
       isAvailable: true,
       featured: false,
       isModelCard: false
     },
     {
-      image: '/images/graeme.png',
-      title: 'Baggy Eye',
-      description: 'Effective results for men and women',
+      image: '/images/co2-laser-treatment-before-and-after2.jpg',
+      title: 'Fine Lines & Wrinkles',
+      description: 'Visible reduction in lines and wrinkles',
       time: 'Results Vary',
       isAvailable: true,
       featured: false,
       isModelCard: false
     },
     {
-      image: '/images/stretch marks.jpeg',
-      title: 'Stretch Marks',
-      description: 'Significant reduction in appearance',
+      image: '/images/co2-laser-treatment-before-and-after5.jpg',
+      title: 'Skin Renewal',
+      description: 'Deep regeneration for lasting results',
       time: 'Results Vary',
       isAvailable: true,
       featured: false,
       isModelCard: false
     },
     {
-      image: '/images/pigmentation.png',
-      title: 'Pigmentation',
-      description: 'Even skin tone restoration',
+      image: '/images/co2-laser-treatment-before-and-after.webp',
+      title: 'Overall Rejuvenation',
+      description: 'Comprehensive skin transformation',
       time: 'Results Vary',
       isAvailable: true,
       featured: false,

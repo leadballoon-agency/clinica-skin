@@ -8,28 +8,28 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
   const treatments = [
     {
       icon: '✨',
-      title: 'Single Session',
-      description: "Individual CO2 laser treatment",
-      features: ['Full face treatment', '5-7 days downtime', '60-90 minutes', 'Immediate results'],
-      price: '£395',
+      title: 'Face',
+      description: "Full-face CO2 laser rejuvenation",
+      features: ['Wrinkles, scarring & texture', '5-7 days downtime', '60-90 minutes', 'Free consultation included'],
+      price: '£900',
       gradient: 'from-blue-400 to-cyan-600',
       popular: false
     },
     {
       icon: '💎',
-      title: '3 Session Package',
-      description: 'Complete transformation package',
-      features: ['3 CO2 laser sessions', 'Save £335 total', 'Book within 6 months', 'Best for acne scars'],
-      price: '£850',
+      title: 'Face + Neck',
+      description: 'Comprehensive treatment package',
+      features: ['Face & neck rejuvenation', 'Tightens & improves texture', 'Natural-looking results', 'SkinCeuticals skin scan'],
+      price: '£1,300',
       gradient: 'from-primary-400 to-primary-600',
       popular: true
     },
     {
       icon: '🔬',
-      title: 'Single + PRP',
-      description: 'CO2 laser with PRP enhancement',
-      features: ['CO2 laser treatment', 'PRP enhancement included', 'Faster healing', 'Enhanced results'],
-      price: '£495',
+      title: 'Face, Neck + Chest',
+      description: 'Full advanced rejuvenation',
+      features: ['Complete visible area treatment', 'Smoothness & elasticity', 'Maximum transformation', 'Doctor-led throughout'],
+      price: '£1,700',
       gradient: 'from-green-400 to-emerald-600',
       popular: false
     }
