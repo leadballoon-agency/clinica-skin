@@ -1,0 +1,90 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft cream/warm white gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDFCFB;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F7F4F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0EBE3;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Rose gold accent -->
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B76E79;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C9A0A0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B76E79;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Soft shadow -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#B76E79" flood-opacity="0.15"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)"/>
+
+  <!-- Subtle decorative elements -->
+  <circle cx="500" cy="100" r="180" fill="#B76E79" opacity="0.03"/>
+  <circle cx="100" cy="500" r="150" fill="#B76E79" opacity="0.03"/>
+
+  <!-- Thin elegant border -->
+  <rect x="40" y="40" width="520" height="520" rx="8" fill="none" stroke="#B76E79" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Top decorative line -->
+  <line x1="150" y1="120" x2="450" y2="120" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Camera aperture icon - minimal and elegant -->
+  <g transform="translate(300, 200)" filter="url(#softShadow)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#roseGold)" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="url(#roseGold)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="12" fill="url(#roseGold)" opacity="0.2"/>
+    <!-- Aperture blades hint -->
+    <line x1="0" y1="-45" x2="0" y2="-28" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+    <line x1="39" y1="22.5" x2="24" y2="14" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+    <line x1="39" y1="-22.5" x2="24" y2="-14" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-39" y1="22.5" x2="-24" y2="14" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-39" y1="-22.5" x2="-24" y2="-14" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+    <line x1="0" y1="45" x2="0" y2="28" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+  </g>
+
+  <!-- Main text -->
+  <text x="300" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="400" fill="#9B8B8B" text-anchor="middle" letter-spacing="6">
+    BECOME A
+  </text>
+
+  <text x="300" y="380" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-style="italic" font-weight="400" fill="#B76E79" text-anchor="middle" letter-spacing="3">
+    Model
+  </text>
+
+  <!-- Decorative flourish -->
+  <g transform="translate(300, 420)">
+    <line x1="-60" y1="0" x2="-20" y2="0" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.6"/>
+    <circle cx="0" cy="0" r="3" fill="url(#roseGold)" opacity="0.4"/>
+    <line x1="20" y1="0" x2="60" y2="0" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.6"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="300" y="470" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="11" font-weight="300" fill="#8B7B7B" text-anchor="middle" letter-spacing="3">
+    EXCLUSIVE TREATMENT RATES
+  </text>
+
+  <text x="300" y="495" font-family="system-ui, -apple-system, 'Helvetica Neue', sans-serif" font-size="11" font-weight="300" fill="#8B7B7B" text-anchor="middle" letter-spacing="3">
+    IN EXCHANGE FOR PHOTOS
+  </text>
+
+  <!-- Bottom decorative line -->
+  <line x1="150" y1="540" x2="450" y2="540" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Subtle corner accents -->
+  <path d="M55 70 L55 55 L70 55" fill="none" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.4"/>
+  <path d="M545 70 L545 55 L530 55" fill="none" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.4"/>
+  <path d="M55 530 L55 545 L70 545" fill="none" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.4"/>
+  <path d="M545 530 L545 545 L530 545" fill="none" stroke="url(#roseGold)" stroke-width="0.5" opacity="0.4"/>
+</svg>
