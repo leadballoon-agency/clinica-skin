@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Navigation from '@/components/Navigation'
 import PremiumHero from '@/components/PremiumHero'
 import AssessmentTool from '@/components/AssessmentTool'
@@ -20,6 +20,14 @@ export default function PageWrapper() {
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false)
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
   const [assessmentData, setAssessmentData] = useState<any>(null)
+
+  // Prevent browser scroll restoration and start at top
+  useEffect(() => {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual'
+    }
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>
