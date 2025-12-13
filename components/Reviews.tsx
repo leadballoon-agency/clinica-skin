@@ -166,7 +166,7 @@ export default function Reviews() {
 
           {/* Leave a Review Button */}
           <a
-            href="https://www.google.com/search?q=Clinica+Aesthetics+%26+Wellbeing+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MjQ1Mza2MDI1szA3MDCwNDA13sDI-IpRzTknMy8zOVHBMbW4JCO1JDO5WEFNITw1JycpNTMvXSEotSwztbx4ESuRCgEIhDrTbAAAAA&rldimm=2156338256870009053&tbm=lcl&hl=en#lkt=LocalPoiReviews&lrd=0x47d871e305f02f11:0x1decda38485268dd,3,,,,"
+            href="https://search.google.com/local/writereview?placeid=ChIJES_wBeNx2EcR3WhSSDja7B0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center space-x-3 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-lg"
