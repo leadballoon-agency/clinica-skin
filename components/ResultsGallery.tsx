@@ -103,59 +103,114 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         {/* Premium Results Grid - Mobile Optimized */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {results.map((result, index) => (
-            <div
-              key={index}
-              className={`group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-premium transition-all duration-300 ${
-                result.isAvailable ? 'sm:hover:shadow-premium-lg cursor-pointer' : 'opacity-90 cursor-not-allowed'
-              } ${result.featured ? 'md:col-span-2' : ''}`}
-              onClick={() => handleCardClick(index)}
-            >
-              {/* Before/After Label - Only show for available results, not for model card */}
-              {result.isAvailable && !result.isModelCard && (
-                <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-10 flex gap-1.5 sm:gap-2">
-                  <span className="bg-white/90 backdrop-blur px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
-                    Before
-                  </span>
-                  <span className="bg-primary-500/90 backdrop-blur text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
-                    After
-                  </span>
+            result.isModelCard ? (
+              /* Special Model Card Design */
+              <div
+                key={index}
+                className="group relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium transition-all duration-300 sm:hover:shadow-premium-lg cursor-pointer bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700"
+                onClick={() => handleCardClick(index)}
+              >
+                {/* Decorative elements */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+                <div className="relative p-6 sm:p-8 flex flex-col justify-center min-h-[280px] sm:min-h-[320px]">
+                  {/* Badge */}
+                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
+                    <span className="bg-white/20 backdrop-blur text-white px-3 py-1 rounded-full text-xs font-medium">
+                      Limited Spots
+                    </span>
+                  </div>
+
+                  {/* Icon */}
+                  <div className="mb-4 sm:mb-5">
+                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-white/20 backdrop-blur rounded-2xl">
+                      <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
+                    Become a Model
+                  </h3>
+                  <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-5 leading-relaxed">
+                    Get <span className="font-semibold">discounted CO2 treatments</span> in exchange for before & after photos
+                  </p>
+
+                  {/* Benefits */}
+                  <div className="flex flex-wrap gap-2 mb-5 sm:mb-6">
+                    <span className="bg-white/15 text-white text-xs px-3 py-1.5 rounded-full">Save £100s</span>
+                    <span className="bg-white/15 text-white text-xs px-3 py-1.5 rounded-full">Anonymous Option</span>
+                  </div>
+
+                  {/* CTA */}
+                  <div className="flex items-center text-white font-semibold text-sm sm:text-base group-hover:translate-x-1 transition-transform">
+                    <span>Apply via WhatsApp</span>
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </div>
                 </div>
-              )}
-
-              {/* Time Badge or FULL Badge */}
-              <div className={`absolute top-2 sm:top-4 right-2 sm:right-4 z-10 backdrop-blur rounded-full px-2 sm:px-3 py-0.5 sm:py-1 ${
-                result.isAvailable ? 'bg-white/90' : 'bg-red-500/90'
-              }`}>
-                <span className={`text-[10px] sm:text-xs font-medium ${
-                  result.isAvailable ? 'text-neutral-700' : 'text-white'
-                }`}>{result.time}</span>
               </div>
+            ) : (
+              /* Regular Before/After Card */
+              <div
+                key={index}
+                className={`group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-premium transition-all duration-300 ${
+                  result.isAvailable ? 'sm:hover:shadow-premium-lg cursor-pointer' : 'opacity-90 cursor-not-allowed'
+                } ${result.featured ? 'md:col-span-2' : ''}`}
+                onClick={() => handleCardClick(index)}
+              >
+                {/* Before/After Label */}
+                {result.isAvailable && (
+                  <div className="absolute top-2 sm:top-4 left-2 sm:left-4 z-10 flex gap-1.5 sm:gap-2">
+                    <span className="bg-white/90 backdrop-blur px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
+                      Before
+                    </span>
+                    <span className="bg-primary-500/90 backdrop-blur text-white px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-medium">
+                      After
+                    </span>
+                  </div>
+                )}
 
-              {/* Image Container */}
-              <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-[4/3]'}`}>
-                <img
-                  src={result.image}
-                  alt={result.title}
-                  className="w-full h-full object-cover sm:group-hover:scale-105 transition-transform duration-500"
-                />
-                
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 sm:from-black/50 via-transparent to-transparent sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
+                {/* Time Badge */}
+                <div className={`absolute top-2 sm:top-4 right-2 sm:right-4 z-10 backdrop-blur rounded-full px-2 sm:px-3 py-0.5 sm:py-1 ${
+                  result.isAvailable ? 'bg-white/90' : 'bg-red-500/90'
+                }`}>
+                  <span className={`text-[10px] sm:text-xs font-medium ${
+                    result.isAvailable ? 'text-neutral-700' : 'text-white'
+                  }`}>{result.time}</span>
+                </div>
 
-              {/* Content */}
-              <div className="p-4 sm:p-6">
-                <h3 className="font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">{result.title}</h3>
-                <p className="text-xs sm:text-sm lg:text-base text-neutral-600">{result.description}</p>
-                
-                <div className="mt-3 sm:mt-4 flex items-center text-primary-600 font-medium text-sm">
-                  <span>View Details</span>
-                  <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                  </svg>
+                {/* Image Container */}
+                <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-[4/3]'}`}>
+                  <img
+                    src={result.image}
+                    alt={result.title}
+                    className="w-full h-full object-cover sm:group-hover:scale-105 transition-transform duration-500"
+                  />
+
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 sm:from-black/50 via-transparent to-transparent sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                {/* Content */}
+                <div className="p-4 sm:p-6">
+                  <h3 className="font-bold text-base sm:text-lg lg:text-xl mb-1 sm:mb-2">{result.title}</h3>
+                  <p className="text-xs sm:text-sm lg:text-base text-neutral-600">{result.description}</p>
+
+                  <div className="mt-3 sm:mt-4 flex items-center text-primary-600 font-medium text-sm">
+                    <span>View Details</span>
+                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 ml-1.5 sm:ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
               </div>
-            </div>
+            )
           ))}
         </div>
 
