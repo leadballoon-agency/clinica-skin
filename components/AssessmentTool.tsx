@@ -132,35 +132,43 @@ export default function AssessmentTool({ onBookingClick, onAssessmentComplete }:
     // Recommend based on severity and concerns
     if (concern === 'scars' ||
         (concern === 'wrinkles' && ageRange === '50+') ||
-        (concern === 'pigmentation' && ageRange !== '20-30')) {
+        (concern === 'aging' && ageRange === '50+')) {
       return {
-        treatment: 'PRP For Free Deal',
-        price: '£700',
-        description: 'Best value - 2 sessions for £350 each + FREE PRP enhancement. Save £300 total! Perfect for deeper concerns.',
+        treatment: 'Face + Neck CO2 Resurfacing',
+        price: '£1,300',
+        description: 'Our most popular package. Comprehensive treatment for face and neck rejuvenation with maximum anti-aging benefits. Includes free SkinCeuticals digital skin scan.',
         isSuitable: true,
         skinType: skinType
       }
     } else if (concern === 'stretch-marks') {
       return {
-        treatment: 'PRP For Free Deal',
+        treatment: 'Body CO2 Resurfacing',
         price: '£700',
-        description: 'Recommended for stretch marks - 2 sessions with FREE PRP for optimal results',
+        description: 'Targeted treatment for stretch marks on larger body areas. Stimulates collagen production for visible improvement.',
         isSuitable: true,
         skinType: skinType
       }
-    } else if (concern === 'pigmentation' || concern === 'wrinkles' || concern === 'aging') {
+    } else if (concern === 'pigmentation') {
       return {
-        treatment: 'Single + PRP',
-        price: '£500',
-        description: 'Single CO2 laser session with PRP enhancement for faster healing and better results',
+        treatment: 'Face CO2 Resurfacing',
+        price: '£900',
+        description: 'Full-face treatment targeting pigmentation and sun damage. Reveals clearer, more even-toned skin.',
+        isSuitable: true,
+        skinType: skinType
+      }
+    } else if (concern === 'wrinkles' || concern === 'aging') {
+      return {
+        treatment: 'Face CO2 Resurfacing',
+        price: '£900',
+        description: 'Full-face rejuvenation for fine lines and wrinkles. 60-90 minute treatment with visible results in 2-4 weeks.',
         isSuitable: true,
         skinType: skinType
       }
     } else {
       return {
-        treatment: 'Single Session',
-        price: '£450',
-        description: 'Individual CO2 laser treatment for targeted skin improvement',
+        treatment: 'Face CO2 Resurfacing',
+        price: '£900',
+        description: 'Full-face CO2 laser treatment for overall skin texture improvement. Free consultation included.',
         isSuitable: true,
         skinType: skinType
       }
