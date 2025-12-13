@@ -132,7 +132,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
               </div>
 
               {/* Image Container */}
-              <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-square'}`}>
+              <div className={`relative overflow-hidden ${result.featured ? 'aspect-video' : 'aspect-[4/3]'}`}>
                 <img
                   src={result.image}
                   alt={result.title}
