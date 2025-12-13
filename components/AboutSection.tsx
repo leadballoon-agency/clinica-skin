@@ -7,8 +7,8 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
     {
       name: 'Dr. Katarzyna Wasilewska',
       title: 'Founder & Senior Aesthetic Medicine Doctor',
-      image: 'https://clinicaskin.co.uk/wp-content/uploads/2025/07/Dr-Katarzyna-cropped.jpg',
-      bio: 'Dr. Kat studied Medicine at the University of Cambridge and trained at Cambridge University Hospitals. She is qualified in Aesthetic and Regenerative Medicine and is a registered member of the Aesthetic Complications Expert Group (ACE). She has spoken internationally on skin longevity, including at Stanford University. Her expertise lies in longevity and regenerative medicine, with a focus on the biology of skin ageing, inflammation, and repair.',
+      image: '/images/Dr-Katarzyna-cropped.jpg',
+      bio: 'Dr. Kat studied Medicine at the University of Cambridge and trained at Cambridge University Hospitals. She is qualified in Aesthetic and Regenerative Medicine and is a registered member of the Aesthetic Complications Expert Group (ACE). She has spoken internationally on skin longevity, including at Stanford University.',
       qualifications: [
         'Cambridge University Medicine Graduate',
         'GMC-Registered Medical Doctor',
@@ -17,16 +17,43 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
       ]
     },
     {
+      name: 'Dr. Abigail Coutinho',
+      title: 'Senior Aesthetic Medicine Doctor',
+      image: '/images/Dr Abigail Coutinho.jpg',
+      bio: 'Dr Abigail is a GMC-registered doctor with an MBBS and BSc in Psychology from King\'s College London. She completed a Level 7 Diploma in Aesthetics from Harley Academy – the highest postgraduate qualification in the field. Her focus includes treating skin of colour and pigmentation concerns.',
+      qualifications: [
+        'GMC-Registered Medical Doctor',
+        'King\'s College London Graduate',
+        'Level 7 Diploma in Aesthetics',
+        'Skin of Colour Specialist'
+      ]
+    }
+  ]
+
+  const supportingTeam = [
+    {
       name: 'Jodie Stebbings',
       title: 'Clinic Manager & Senior Technician',
       image: '/images/Miss Jodie-Stebbings.jpg',
-      bio: 'With over six years in the beauty industry, Jodie has developed extensive expertise through hands-on experience and tailored client care. She is highly skilled in advanced laser treatments – including vascular, pigmentation, acne, and rosacea – and performs advanced skin peels. Jodie is qualified with leading skincare brands such as ZO, SkinCeuticals, and PCA.',
-      qualifications: [
-        'Advanced Laser Treatment Specialist',
-        'Pigmentation & Acne Expert',
-        'ZO, SkinCeuticals & PCA Qualified',
-        '6+ Years Industry Experience'
-      ]
+      description: 'Advanced laser specialist with 6+ years experience. Expert in pigmentation, acne & rosacea treatments.'
+    },
+    {
+      name: 'Alina Bila',
+      title: 'Junior Technician',
+      image: '/images/Mrs Alina Bila.jpg',
+      description: 'Certified beauty specialist (Levels 2-5) specialising in facial treatments and skincare.'
+    },
+    {
+      name: 'Klaudia Traubert',
+      title: 'Massage & Wellness Therapist',
+      image: '/images/Klaudia Traubert.jpg',
+      description: 'Qualified since 2016 with advanced certifications in facial treatments and lymphatic drainage.'
+    },
+    {
+      name: 'Paulina Lutynska',
+      title: 'Eyelash Specialist',
+      image: '/images/Paulina Lutynska.jpg',
+      description: 'Lash stylist since 2013. UK Hair & Beauty Awards finalist for Lash Stylist of the Year.'
     }
   ]
 
@@ -93,8 +120,37 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
           ))}
         </div>
 
-        {/* Single CTA below both practitioners */}
-        <div className="text-center mt-8 sm:mt-12">
+        {/* Supporting Team Section */}
+        <div className="mt-12 sm:mt-16">
+          <div className="text-center mb-8">
+            <h3 className="font-display text-xl sm:text-2xl font-bold text-neutral-800">
+              Our Supporting Team
+            </h3>
+            <p className="text-sm text-neutral-600 mt-2">
+              Expert care at every step of your journey
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+            {supportingTeam.map((member, index) => (
+              <div key={index} className="text-center group">
+                <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-md mb-3 sm:mb-4 aspect-square">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h4 className="font-bold text-sm sm:text-base text-neutral-800">{member.name}</h4>
+                <p className="text-primary-600 text-xs sm:text-sm font-medium">{member.title}</p>
+                <p className="text-neutral-500 text-xs mt-1 hidden sm:block leading-relaxed">{member.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Single CTA below team */}
+        <div className="text-center mt-10 sm:mt-12">
           <button
             onClick={onBookingClick}
             className="w-full sm:w-auto inline-flex items-center justify-center bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-medium text-base sm:text-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
