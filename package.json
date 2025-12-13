@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "CO2 Laser Treatment Landing Page for Clinica Skin Cambridge",
   "dependencies": {
-    "next": "^16.0.10",
+    "next": "^15.5.9",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
