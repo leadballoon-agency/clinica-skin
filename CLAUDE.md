@@ -8,10 +8,47 @@ CO2 laser treatment landing page for Clinica Skin Cambridge, built with Next.js 
 
 **Domain**: co2lasercambridge.co.uk
 **Repository**: https://github.com/leadballoon-agency/clinica-skin
-**Clinic**: Clinica Skin Cambridge
-**Practitioner**: Dr. Katarzyna Molenda Wasilewska
+**Clinic**: Clinica Aesthetics & Wellbeing (trading as Clinica Skin Cambridge)
 **Location**: 3-4 Sussex Street, Cambridge CB1 1PA
 **Phone**: 01223 555 123
+**Google Place ID**: ChIJES_wBeNx2EcR3WhSSDja7B0
+
+## Client Agreement (Lead Balloon Agency)
+
+**Status**: Trial period until end of January 2025
+**Client Contact**: Dr. Katarzyna (Kat) Molenda Wasilewska
+
+### Services
+- Technical Marketing: £295/month (Facebook/Insta ads, email, WhatsApp, landing page)
+- Appointment Setting: £20/day + £25 per qualified appointment
+- Recommended Ad Spend: £25/day (£750/month)
+
+### Guarantee
+- Minimum 5 qualified appointments during trial
+- No invoice if target not met
+- First invoice at end of January 2025
+
+### Pending from Client
+- [ ] Advertising video for social media
+- [ ] Facebook Business Manager access
+- [ ] Google Business Profile access
+- [ ] Stripe account access
+- [ ] Company documentation (proof of ownership)
+- [ ] Landing page corrections/approval
+- [ ] Text and photo for Marie
+- [ ] Phorest login (send to kerrytelesales@gmail.com)
+
+## Team
+
+### Doctors
+- **Dr. Katarzyna Wasilewska** - Founder & Senior Aesthetic Medicine Doctor (Cambridge University)
+- **Dr. Abigail Coutinho** - Senior Aesthetic Medicine Doctor (King's College London)
+
+### Supporting Team
+- **Jodie Stebbings** - Clinic Manager & Senior Technician (laser specialist)
+- **Alina Bila** - Junior Technician
+- **Klaudia Traubert** - Massage & Wellness Therapist
+- **Paulina Lutynska** - Eyelash Specialist
 
 ## Development Commands
 
@@ -77,13 +114,6 @@ Uses `@/*` path alias mapping to project root (configured in tsconfig.json).
 
 ## Key Content Details
 
-### Dr. Katarzyna Wasilewska
-- Cambridge University Medicine Graduate
-- GMC-Registered Medical Doctor
-- Aesthetic & Regenerative Medicine Specialist
-- ACE Group Member
-- Spoken internationally including Stanford University
-
 ### CO2 Treatment Pricing
 - Face: £900
 - Face + Neck: £1,300
@@ -111,3 +141,25 @@ Uses `@/*` path alias mapping to project root (configured in tsconfig.json).
 - **OG Image**: Dr. Katarzyna's photo (/images/Dr-Katarzyna-cropped.jpg)
 - **Structured Data**: MedicalBusiness, MedicalClinic, Service, Review, Physician schemas
 - **219 Google Reviews** (5-star rating)
+- **Google Review Link**: https://search.google.com/local/writereview?placeid=ChIJES_wBeNx2EcR3WhSSDja7B0
+
+## Pending Work (When Client Confirms)
+
+### Immediate
+- [ ] Add Marie's profile (text + photo from client)
+- [ ] Upload client's advertising video to VideoModal
+- [ ] Connect Facebook Pixel to client's account
+- [ ] Set up GHL calendar with client's booking system
+- [ ] Connect to Phorest booking system
+
+### Pre-Launch
+- [ ] Client approval on landing page content
+- [ ] Verify domain DNS (co2lasercambridge.co.uk)
+- [ ] Test booking flow end-to-end
+- [ ] Set up Facebook/Instagram ad campaigns
+
+## Files Reference
+
+- **Service Agreement**: `LEAD-BALLOON-SERVICE-AGREEMENT.md`
+- **Letter to Client**: `LETTER-TO-KAT.md`
+- **Agreement Template**: `~/Desktop/LEAD-BALLOON-AGREEMENT-TEMPLATE.md`
