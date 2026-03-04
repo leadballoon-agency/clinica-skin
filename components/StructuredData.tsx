@@ -247,36 +247,63 @@ export default function StructuredData() {
     ]
   }
 
-  const physicianSchema = {
-    "@context": "https://schema.org",
-    "@type": "Physician",
-    "name": "Dr. Katarzyna Molenda Wasilewska",
-    "alternateName": "Dr. Kat",
-    "image": "https://co2lasercambridge.co.uk/images/Dr-Katarzyna-cropped.jpg",
-    "jobTitle": "Founder & Senior Aesthetic Medicine Doctor",
-    "description": "Cambridge University Medicine Graduate. Qualified in Aesthetic and Regenerative Medicine. Member of Aesthetic Complications Expert Group (ACE). International speaker on skin longevity.",
-    "worksFor": {
-      "@type": "MedicalBusiness",
-      "name": "Clinica Skin Cambridge",
-      "url": "https://co2lasercambridge.co.uk"
+  const physicianSchema = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Katarzyna Molenda Wasilewska",
+      "alternateName": "Dr. Kat",
+      "image": "https://co2lasercambridge.co.uk/images/Dr-Katarzyna-cropped.jpg",
+      "jobTitle": "Founder & Senior Aesthetic Medicine Doctor",
+      "description": "Cambridge University Medicine Graduate. Qualified in Aesthetic and Regenerative Medicine. Member of Aesthetic Complications Expert Group (ACE). International speaker on skin longevity.",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Clinica Skin Cambridge",
+        "url": "https://co2lasercambridge.co.uk"
+      },
+      "medicalSpecialty": [
+        "Aesthetic Medicine",
+        "Regenerative Medicine",
+        "Dermatology",
+        "CO2 Laser Resurfacing"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Cambridge"
+      },
+      "knowsAbout": [
+        "CO2 Laser Resurfacing",
+        "Acne Scar Treatment",
+        "Skin Rejuvenation",
+        "Anti-Aging Treatments"
+      ]
     },
-    "medicalSpecialty": [
-      "Aesthetic Medicine",
-      "Regenerative Medicine",
-      "Dermatology",
-      "CO2 Laser Resurfacing"
-    ],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Cambridge"
-    },
-    "knowsAbout": [
-      "CO2 Laser Resurfacing",
-      "Acne Scar Treatment",
-      "Skin Rejuvenation",
-      "Anti-Aging Treatments"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Dr. Maria Chriba",
+      "image": "https://co2lasercambridge.co.uk/images/Dr-Maria.jpg",
+      "jobTitle": "Aesthetic Medicine Doctor",
+      "description": "Over 25 years of dermatology experience at Norfolk and Norwich University Hospital. 10+ years as a GP. Fully trained in fractional CO₂ laser, radiofrequency microneedling and PRP.",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Clinica Skin Cambridge",
+        "url": "https://co2lasercambridge.co.uk"
+      },
+      "medicalSpecialty": [
+        "Dermatology",
+        "Aesthetic Medicine",
+        "CO2 Laser Resurfacing",
+        "Radiofrequency Microneedling"
+      ],
+      "knowsAbout": [
+        "Fractional CO2 Laser",
+        "Radiofrequency Microneedling",
+        "PRP Treatment",
+        "Skin Health"
+      ]
+    }
+  ]
 
   return (
     <>

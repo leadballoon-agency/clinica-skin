@@ -27,6 +27,18 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
         'Level 7 Diploma in Aesthetics',
         'Skin of Colour Specialist'
       ]
+    },
+    {
+      name: 'Dr. Maria Chriba',
+      title: 'Aesthetic Medicine Doctor',
+      image: '/images/Dr-Maria.jpg',
+      bio: 'Dr Maria Chriba brings over 25 years of experience in dermatology, having worked extensively at Norfolk and Norwich University Hospital. With more than 10 years as a GP, she has a broad, holistic understanding of skin health within overall wellbeing. Fully trained in medical aesthetics including fractional CO₂ laser, radiofrequency microneedling and PRP, she combines clinical expertise with modern, evidence-based techniques. Dr Chriba is passionate about personalised, patient-tailored treatments — her philosophy is simple: enhancing natural beauty always starts with healthy skin.',
+      qualifications: [
+        '25+ Years Dermatology Experience',
+        'Norfolk & Norwich University Hospital',
+        'Fractional CO₂ Laser Specialist',
+        'RF Microneedling & PRP Trained'
+      ]
     }
   ]
 
@@ -71,7 +83,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {practitioners.map((practitioner, index) => (
             <div key={index} className="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-premium hover:shadow-premium-lg transition-all duration-300">
               {/* Practitioner Image */}
