@@ -69,7 +69,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
 
           {/* Description */}
           <p className="text-white/90 text-sm sm:text-base mb-6 max-w-xs leading-relaxed">
-            Watch Dr. Katarzyna explain the CO2 laser resurfacing process and what results you can expect.
+            Watch our experts explain the CO2 laser resurfacing process and what results you can expect.
           </p>
 
           {/* Coming soon badge */}

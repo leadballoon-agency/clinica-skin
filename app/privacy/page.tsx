@@ -188,7 +188,7 @@ export default function PrivacyPolicy() {
               <p className="text-neutral-600">3-4 Sussex Street</p>
               <p className="text-neutral-600">Cambridge CB1 1PA</p>
               <p className="text-neutral-600 mt-2">
-                Phone: <a href="tel:+441223555123" className="text-primary-600 hover:underline">01223 555 123</a>
+                Phone: <a href="tel:+441223752200" className="text-primary-600 hover:underline">01223 752 200</a>
               </p>
               <p className="text-neutral-600">
                 Email: <a href="mailto:info@clinicaskin.co.uk" className="text-primary-600 hover:underline">info@clinicaskin.co.uk</a>

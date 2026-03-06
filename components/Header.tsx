@@ -24,7 +24,7 @@ export default function Header() {
             <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
           </nav>
           
-          <a href="tel:+441223555123" className="hidden md:block bg-primary-600 text-white px-6 py-2 rounded hover:bg-primary-700">
+          <a href="tel:+441223752200" className="hidden md:block bg-primary-600 text-white px-6 py-2 rounded hover:bg-primary-700">
             Book Now
           </a>
           
@@ -51,8 +51,8 @@ export default function Header() {
               <a href="#process" className="text-gray-600 hover:text-gray-900">Process</a>
               <a href="#faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
               <a href="#contact" className="text-gray-600 hover:text-gray-900">Contact</a>
-              <a href="tel:+441223555123" className="bg-primary-600 text-white px-6 py-2 rounded text-center">
-                Call: 01223 555 123
+              <a href="tel:+441223752200" className="bg-primary-600 text-white px-6 py-2 rounded text-center">
+                Call: 01223 752 200
               </a>
             </div>
           </nav>

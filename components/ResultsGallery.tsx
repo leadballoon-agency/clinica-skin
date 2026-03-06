@@ -8,8 +8,6 @@ interface ResultsGalleryProps {
 
 export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
-  const [isModelModalOpen, setIsModelModalOpen] = useState(false)
-
   const results = [
     {
       image: '/images/co2laser-skin-rejeuvenation.jpeg',
@@ -17,8 +15,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       description: 'Complete skin rejuvenation, renewal and tightening',
       time: 'Results Vary',
       isAvailable: true,
-      featured: true,
-      isModelCard: false
+      featured: true
     },
     {
       image: '/images/co2-laser-treatment-before-and-after7.jpg',
@@ -26,8 +23,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       description: 'Smoother, firmer skin with improved clarity',
       time: 'Results Vary',
       isAvailable: true,
-      featured: false,
-      isModelCard: false
+      featured: false
     },
     {
       image: '/images/co2-laser-treatment-before-and-after2.jpg',
@@ -35,8 +31,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       description: 'Visible reduction in lines and wrinkles',
       time: 'Results Vary',
       isAvailable: true,
-      featured: false,
-      isModelCard: false
+      featured: false
     },
     {
       image: '/images/co2-laser-treatment-before-and-after5.jpg',
@@ -44,8 +39,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       description: 'Deep regeneration for lasting results',
       time: 'Results Vary',
       isAvailable: true,
-      featured: false,
-      isModelCard: false
+      featured: false
     },
     {
       image: '/images/co2-laser-treatment-before-and-after.webp',
@@ -53,37 +47,14 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
       description: 'Comprehensive skin transformation',
       time: 'Results Vary',
       isAvailable: true,
-      featured: false,
-      isModelCard: false
-    },
-    {
-      image: '/images/model-day-tile.svg',
-      title: 'Become a Model',
-      description: 'Get discounted treatments in exchange for before & after photos',
-      time: 'Apply Now',
-      isAvailable: true,
-      featured: false,
-      isModelCard: true
+      featured: false
     }
   ]
 
   const handleCardClick = (index: number) => {
     const result = results[index]
     if (!result.isAvailable) return
-
-    if (result.isModelCard) {
-      setIsModelModalOpen(true)
-    } else {
-      setSelectedImage(index)
-    }
-  }
-
-  const openWhatsAppWithMessage = () => {
-    const phoneNumber = '441223555123'
-    const message = encodeURIComponent(
-      `Hi Clinica Skin! 👋\n\nI'm interested in becoming a model for your CO2 laser treatments.\n\nI understand I can receive discounted treatments in exchange for allowing my before & after photos to be used.\n\nPlease let me know what the next steps are!\n\n[I will send photos of my skin concern in the next message]`
-    )
-    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank')
+    setSelectedImage(index)
   }
 
   return (
@@ -103,60 +74,6 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         {/* Premium Results Grid - Mobile Optimized */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {results.map((result, index) => (
-            result.isModelCard ? (
-              /* Special Model Card Design */
-              <div
-                key={index}
-                className="group relative rounded-xl sm:rounded-2xl overflow-hidden shadow-premium transition-all duration-300 sm:hover:shadow-premium-lg cursor-pointer bg-gradient-to-br from-primary-500 via-primary-600 to-primary-700"
-                onClick={() => handleCardClick(index)}
-              >
-                {/* Decorative elements */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-
-                <div className="relative p-6 sm:p-8 flex flex-col justify-center min-h-[280px] sm:min-h-[320px]">
-                  {/* Badge */}
-                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4">
-                    <span className="bg-white/20 backdrop-blur text-white px-3 py-1 rounded-full text-xs font-medium">
-                      Limited Spots
-                    </span>
-                  </div>
-
-                  {/* Icon */}
-                  <div className="mb-4 sm:mb-5">
-                    <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-white/20 backdrop-blur rounded-2xl">
-                      <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-white text-xl sm:text-2xl font-bold mb-2">
-                    Become a Model
-                  </h3>
-                  <p className="text-white/90 text-sm sm:text-base mb-4 sm:mb-5 leading-relaxed">
-                    Get <span className="font-semibold">discounted CO2 treatments</span> in exchange for before & after photos
-                  </p>
-
-                  {/* Benefits */}
-                  <div className="flex flex-wrap gap-2 mb-5 sm:mb-6">
-                    <span className="bg-white/15 text-white text-xs px-3 py-1.5 rounded-full">Save £100s</span>
-                    <span className="bg-white/15 text-white text-xs px-3 py-1.5 rounded-full">Anonymous Option</span>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="flex items-center text-white font-semibold text-sm sm:text-base group-hover:translate-x-1 transition-transform">
-                    <span>Apply via WhatsApp</span>
-                    <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              /* Regular Before/After Card */
               <div
                 key={index}
                 className={`group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-premium transition-all duration-300 ${
@@ -210,7 +127,6 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
                   </div>
                 </div>
               </div>
-            )
           ))}
         </div>
 
@@ -280,105 +196,6 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
           </div>
         )}
 
-        {/* Model Application Modal */}
-        {isModelModalOpen && (
-          <div className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center sm:p-4">
-            {/* Backdrop */}
-            <div
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-              onClick={() => setIsModelModalOpen(false)}
-            />
-
-            {/* Modal */}
-            <div className="relative w-full max-w-lg bg-white rounded-t-3xl sm:rounded-3xl shadow-2xl overflow-hidden max-h-[90vh] sm:max-h-[85vh] flex flex-col">
-              {/* Header */}
-              <div className="relative bg-gradient-to-br from-primary-500 to-primary-600 p-6 sm:p-8 text-white flex-shrink-0">
-                <button
-                  onClick={() => setIsModelModalOpen(false)}
-                  className="absolute top-4 right-4 sm:top-6 sm:right-6 w-8 h-8 sm:w-10 sm:h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
-                >
-                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-white/20 backdrop-blur rounded-full mb-3 sm:mb-4">
-                    <span className="text-3xl">📸</span>
-                  </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold mb-2">Become a Model</h2>
-                  <p className="text-white/90 text-sm sm:text-base">
-                    Get discounted CO2 laser treatments
-                  </p>
-                </div>
-              </div>
-
-              {/* Content */}
-              <div className="flex-1 overflow-y-auto p-6 sm:p-8">
-                <div className="space-y-6">
-                  <div className="bg-primary-50 rounded-2xl p-5">
-                    <h3 className="font-semibold text-lg mb-3">What's the deal?</h3>
-                    <ul className="space-y-2 text-sm text-neutral-700">
-                      <li className="flex items-start">
-                        <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                        <span>Receive <strong>discounted treatments</strong> at Clinica Skin</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                        <span>In exchange, we use your <strong>before & after photos</strong> for marketing</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                        <span>Photos can be <strong>anonymous</strong> (face not shown)</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="text-primary-500 mr-2 mt-0.5">✓</span>
-                        <span>Perfect for acne scars, pigmentation, stretch marks & more</span>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="bg-neutral-50 rounded-2xl p-5">
-                    <h3 className="font-semibold text-lg mb-3">How to apply</h3>
-                    <ol className="space-y-3 text-sm text-neutral-700">
-                      <li className="flex items-start">
-                        <span className="bg-primary-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">1</span>
-                        <span>Click the WhatsApp button below</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="bg-primary-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">2</span>
-                        <span>Send photos of your skin concern</span>
-                      </li>
-                      <li className="flex items-start">
-                        <span className="bg-primary-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs font-bold mr-3 mt-0.5 flex-shrink-0">3</span>
-                        <span>Our team will review and get back to you</span>
-                      </li>
-                    </ol>
-                  </div>
-
-                  <button
-                    onClick={openWhatsAppWithMessage}
-                    className="w-full bg-[#25D366] hover:bg-[#20BD5A] text-white rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:shadow-lg group"
-                  >
-                    <div className="flex items-center justify-center space-x-3">
-                      <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                      </svg>
-                      <div className="text-left">
-                        <p className="font-bold text-lg">Apply via WhatsApp</p>
-                        <p className="text-sm text-white/90">Send us your photos</p>
-                      </div>
-                    </div>
-                  </button>
-
-                  <p className="text-xs text-center text-neutral-500">
-                    By applying, you agree to allow Clinica Skin to use your before & after photos for marketing purposes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </section>
   )

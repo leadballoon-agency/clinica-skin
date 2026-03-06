@@ -34,11 +34,11 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📞</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Call Us</h3>
             <a
-              href="tel:+441223555123"
+              href="tel:+441223752200"
               onClick={trackPhoneClick}
               className="text-white/90 hover:text-white text-sm sm:text-base"
             >
-              01223 555 123
+              01223 752 200
             </a>
           </div>
 

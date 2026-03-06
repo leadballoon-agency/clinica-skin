@@ -50,12 +50,6 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
       description: 'Advanced laser specialist with 6+ years experience. Expert in pigmentation, acne & rosacea treatments.'
     },
     {
-      name: 'Alina Bila',
-      title: 'Junior Technician',
-      image: '/images/Mrs Alina Bila.jpg',
-      description: 'Certified beauty specialist (Levels 2-5) specialising in facial treatments and skincare.'
-    },
-    {
       name: 'Klaudia Traubert',
       title: 'Massage & Wellness Therapist',
       image: '/images/Klaudia Traubert.jpg',
@@ -143,7 +137,7 @@ export default function AboutSection({ onBookingClick }: AboutSectionProps) {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
             {supportingTeam.map((member, index) => (
               <div key={index} className="text-center group">
                 <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-md mb-3 sm:mb-4 aspect-square">

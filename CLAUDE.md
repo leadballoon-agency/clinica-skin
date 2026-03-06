@@ -10,7 +10,7 @@ CO2 laser treatment landing page for Clinica Skin Cambridge, built with Next.js 
 **Repository**: https://github.com/leadballoon-agency/clinica-skin
 **Clinic**: Clinica Aesthetics & Wellbeing (trading as Clinica Skin Cambridge)
 **Location**: 3-4 Sussex Street, Cambridge CB1 1PA
-**Phone**: 01223 555 123
+**Phone**: 01223 752 200 | **Mobile**: 07446 934 007
 **Google Place ID**: ChIJES_wBeNx2EcR3WhSSDja7B0
 
 ## Client Agreement (Lead Balloon Agency)
@@ -46,7 +46,6 @@ CO2 laser treatment landing page for Clinica Skin Cambridge, built with Next.js 
 
 ### Supporting Team
 - **Jodie Stebbings** - Clinic Manager & Senior Technician (laser specialist)
-- **Alina Bila** - Junior Technician
 - **Klaudia Traubert** - Massage & Wellness Therapist
 - **Paulina Lutynska** - Eyelash Specialist
 

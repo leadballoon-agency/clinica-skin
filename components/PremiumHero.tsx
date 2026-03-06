@@ -35,7 +35,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
             </h1>
 
             <p className="text-sm sm:text-lg md:text-xl text-neutral-600 leading-relaxed max-w-xl mx-auto lg:mx-0 px-2 sm:px-0">
-              Advanced CO₂ laser resurfacing for wrinkles, acne scars & sun damage. Doctor-led care by Dr. Katarzyna at award-winning Clinica Skin, Cambridge.
+              Advanced CO₂ laser resurfacing for wrinkles, acne scars & sun damage. Doctor-led care at award-winning Clinica Skin, Cambridge.
             </p>
 
             {/* CTA Buttons */}
@@ -142,7 +142,7 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                     <div className="flex justify-center items-center space-x-2 text-primary-600">
                       <span className="font-medium">Cambridge-Trained</span>
                       <span className="text-primary-300">•</span>
-                      <span className="font-medium">Dr. Katarzyna Wasilewska</span>
+                      <span className="font-medium">Clinica Skin Cambridge</span>
                     </div>
                   </div>
                 </div>

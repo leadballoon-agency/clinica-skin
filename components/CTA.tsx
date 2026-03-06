@@ -27,7 +27,7 @@ export default function CTA() {
           <div className="bg-white/10 backdrop-blur rounded-2xl p-6">
             <div className="text-3xl mb-3">📞</div>
             <h3 className="font-semibold text-lg mb-2">Call Us</h3>
-            <a href="tel:+447846888649" className="text-white/90 hover:text-white">
+            <a href="tel:+441223752200" className="text-white/90 hover:text-white">
               +44 7846 888649
             </a>
           </div>

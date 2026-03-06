@@ -18,8 +18,13 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <a href="tel:+441223555123" className="hover:text-white">
-                  01223 555 123
+                <a href="tel:+441223752200" className="hover:text-white">
+                  01223 752 200
+                </a>
+              </li>
+              <li>
+                <a href="tel:+447446934007" className="hover:text-white">
+                  07446 934 007
                 </a>
               </li>
               <li>3-4 Sussex Street</li>

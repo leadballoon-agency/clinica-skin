@@ -149,7 +149,7 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
               </div>
 
               <a
-                href="tel:+441223555123"
+                href="tel:+441223752200"
                 onClick={trackPhoneClick}
                 className="block w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300 hover:shadow-lg group"
               >
@@ -161,7 +161,7 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
                   </div>
                   <div className="text-left">
                     <p className="text-sm sm:text-base font-medium mb-0.5 sm:mb-1">Prefer to speak with us?</p>
-                    <p className="text-xl sm:text-2xl font-bold">01223 555 123</p>
+                    <p className="text-xl sm:text-2xl font-bold">01223 752 200</p>
                     <p className="text-xs sm:text-sm text-white/90 mt-0.5">Tap to call now</p>
                   </div>
                 </div>

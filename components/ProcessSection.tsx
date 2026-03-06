@@ -7,7 +7,7 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
     {
       number: '01',
       title: 'Free Consultation',
-      description: 'Skin analysis with Dr. Katarzyna including SkinCeuticals digital scan',
+      description: 'Skin analysis with our expert doctors including SkinCeuticals digital scan',
       icon: '💬',
       duration: '30 mins'
     },
@@ -129,7 +129,7 @@ export default function ProcessSection({ onBookingClick }: ProcessSectionProps) 
                   <span className="text-2xl mr-2">👩‍⚕️</span>
                   <h4 className="font-bold text-primary-800">Doctor-Led Throughout</h4>
                 </div>
-                <p className="text-sm text-primary-700">Dr. Katarzyna personally performs every consultation and treatment, ensuring medical-grade care and optimal results.</p>
+                <p className="text-sm text-primary-700">Every consultation and treatment is performed by our expert doctors, ensuring medical-grade care and optimal results.</p>
               </div>
 
               <h3 className="font-display text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">
