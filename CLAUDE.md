@@ -114,7 +114,7 @@ Uses `@/*` path alias mapping to project root (configured in tsconfig.json).
 ## Key Content Details
 
 ### CO2 Treatment Pricing
-- Face: £900
+- Face: £795
 - Face + Neck: £1,300
 - Face, Neck + Chest: £1,700
 - Chest only: £800

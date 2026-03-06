@@ -46,7 +46,7 @@ export default function CTASection({ onBookingClick }: CTASectionProps) {
             <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">📧</div>
             <h3 className="font-semibold text-base sm:text-lg mb-1 sm:mb-2">Email</h3>
             <p className="text-white/90 text-xs sm:text-sm">
-              info@clinicaskin.co.uk
+              info@co2lasercambridge.co.uk
             </p>
           </div>
 

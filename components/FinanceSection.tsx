@@ -4,7 +4,7 @@ interface FinanceSectionProps {
 
 export default function FinanceSection({ onBookingClick }: FinanceSectionProps) {
   const treatments = [
-    { name: 'CO₂ Skin Resurfacing – Face', price: '£900', description: 'Full-face rejuvenation for wrinkles, scarring & texture' },
+    { name: 'CO₂ Skin Resurfacing – Face', price: '£795', description: 'Full-face rejuvenation for wrinkles, scarring & texture' },
     { name: 'CO₂ Skin Resurfacing – Face + Neck', price: '£1,300', description: 'Comprehensive treatment for face and neck' },
     { name: 'CO₂ Skin Resurfacing – Face, Neck + Chest', price: '£1,700', description: 'Full advanced rejuvenation package' },
     { name: 'CO₂ Skin Resurfacing – Chest Only', price: '£800', description: 'Targets lines, wrinkles & sun damage on décolletage' },

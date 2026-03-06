@@ -9,7 +9,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
       title: 'Face',
       description: "Full-face CO2 laser rejuvenation",
       features: ['Wrinkles, scarring & texture', '5-7 days downtime', '60-90 minutes', 'Free consultation included'],
-      price: '£900',
+      price: '£795',
       gradient: 'from-blue-400 to-cyan-600',
       popular: false
     },

@@ -42,7 +42,7 @@ export default function StructuredData() {
             "name": "CO2 Skin Resurfacing - Face",
             "description": "Full-face CO2 laser rejuvenation for wrinkles, scarring & texture"
           },
-          "price": "900",
+          "price": "795",
           "priceCurrency": "GBP"
         },
         {
@@ -110,7 +110,7 @@ export default function StructuredData() {
     },
     "url": "https://co2lasercambridge.co.uk",
     "telephone": "+441223752200",
-    "email": "info@clinicaskin.co.uk",
+    "email": "info@co2lasercambridge.co.uk",
     "priceRange": "££-£££",
     "openingHoursSpecification": [
       {
@@ -185,7 +185,7 @@ export default function StructuredData() {
         {
           "@type": "Offer",
           "name": "CO2 Skin Resurfacing - Face",
-          "price": "900",
+          "price": "795",
           "priceCurrency": "GBP"
         },
         {
