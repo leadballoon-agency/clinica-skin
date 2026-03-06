@@ -1,9 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { trackBookingModalOpen, trackPhoneClick } from './FacebookPixel'
-
-type ConsultationType = 'video' | 'in-clinic'
 
 interface BookingModalProps {
   isOpen: boolean
@@ -12,8 +10,6 @@ interface BookingModalProps {
 }
 
 export default function BookingModal({ isOpen, onClose, assessmentData }: BookingModalProps) {
-  const [consultationType, setConsultationType] = useState<ConsultationType>('in-clinic')
-
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden'
@@ -81,45 +77,8 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
           <div className="flex-1 overflow-y-auto p-6 sm:p-8">
             {/* GHL Calendar */}
             <div className="space-y-4 sm:space-y-6 animate-fade-in">
-              {/* Consultation Type Toggle - Compact Pill Style */}
-              <div className="flex items-center justify-between mb-1">
-                <p className="text-sm text-neutral-600">Consultation type:</p>
-                <div className="inline-flex bg-neutral-100 rounded-full p-0.5">
-                  <button
-                    onClick={() => setConsultationType('video')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                      consultationType === 'video'
-                        ? 'bg-white text-primary-600 shadow-sm'
-                        : 'text-neutral-500 hover:text-neutral-700'
-                    }`}
-                  >
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
-                    Video
-                  </button>
-                  <button
-                    onClick={() => setConsultationType('in-clinic')}
-                    className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-200 ${
-                      consultationType === 'in-clinic'
-                        ? 'bg-white text-primary-600 shadow-sm'
-                        : 'text-neutral-500 hover:text-neutral-700'
-                    }`}
-                  >
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                    </svg>
-                    In-Clinic
-                  </button>
-                </div>
-              </div>
-
-              {/* Subtle info text */}
               <p className="text-xs text-neutral-400 mb-3">
-                {consultationType === 'video'
-                  ? 'Perfect for initial assessments from the comfort of home'
-                  : '3-4 Sussex Street, Cambridge • Includes SkinCeuticals skin scan'
-                }
+                3-4 Sussex Street, Cambridge • Includes SkinCeuticals skin scan
               </p>
 
               <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 min-h-[600px]">
@@ -133,7 +92,7 @@ export default function BookingModal({ isOpen, onClose, assessmentData }: Bookin
                     overflow: 'hidden'
                   }}
                   scrolling="no"
-                  id="wI8gdiR5RL5ghq6dzkn8_1765616073658"
+                  id="wI8gdiR5RL5ghq6dzkn8_1772781249822"
                   title="Clinica Skin Cambridge Booking Calendar"
                 />
               </div>
