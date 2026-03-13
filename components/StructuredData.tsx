@@ -11,7 +11,7 @@ export default function StructuredData() {
     ],
     "logo": "https://co2lasercambridge.co.uk/images/clinica-logo-two-fonts-2-e1747394036335.webp",
     "image": "https://co2lasercambridge.co.uk/images/Dr-Katarzyna-cropped.jpg",
-    "description": "Doctor-led CO2 laser resurfacing clinic in Cambridge. Specialising in acne scar treatment, wrinkle reduction, sun damage repair, and advanced skin rejuvenation. CQC-registered and award-winning.",
+    "description": "Doctor-led CO2 laser resurfacing clinic in Cambridge. Specialising in acne scar treatment, wrinkle reduction, sun damage repair, and advanced skin rejuvenation. Award-winning and doctor-led.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3-4 Sussex Street",
@@ -94,7 +94,7 @@ export default function StructuredData() {
     "name": "Clinica Skin Cambridge",
     "alternateName": "CO2 Laser Cambridge",
     "image": "https://co2lasercambridge.co.uk/images/Dr-Katarzyna-cropped.jpg",
-    "description": "Doctor-led CO2 laser resurfacing clinic in Cambridge. CQC-registered, award-winning clinic specialising in acne scar treatment, wrinkle reduction, sun damage repair, and advanced skin rejuvenation.",
+    "description": "Doctor-led CO2 laser resurfacing clinic in Cambridge. Award-winning, doctor-led clinic specialising in acne scar treatment, wrinkle reduction, sun damage repair, and advanced skin rejuvenation.",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "3-4 Sussex Street",

@@ -48,7 +48,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p className="mb-2">&copy; 2025 Clinica Skin Cambridge. All rights reserved.</p>
           <p className="text-xs text-gray-500">
-            CQC Registered. This site may use tracking technologies to improve user experience.
+            This site may use tracking technologies to improve user experience.
           </p>
         </div>
       </div>

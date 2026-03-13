@@ -71,8 +71,8 @@ export default function PremiumHero({ onBookingClick, onVideoClick }: PremiumHer
                 <p className="text-xs text-neutral-600 whitespace-nowrap">Consultation</p>
               </div>
               <div className="text-center">
-                <p className="text-xl sm:text-2xl font-bold text-primary-600">CQC</p>
-                <p className="text-xs text-neutral-600 whitespace-nowrap">Registered</p>
+                <p className="text-xl sm:text-2xl font-bold text-primary-600">Award</p>
+                <p className="text-xs text-neutral-600 whitespace-nowrap">Winning</p>
               </div>
               <div className="text-center">
                 <p className="text-xl sm:text-2xl font-bold text-primary-600">5★</p>

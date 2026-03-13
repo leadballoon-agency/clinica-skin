@@ -161,7 +161,7 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
         <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {[
             { number: 'Doctor', label: 'Led Care' },
-            { number: 'CQC', label: 'Registered' },
+            { number: 'Award', label: 'Winning' },
             { number: '£450', label: 'Starting From' },
             { number: '219', label: '5★ Reviews' }
           ].map((stat, index) => (

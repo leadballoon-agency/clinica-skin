@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'CO2 Laser Resurfacing Cambridge | Doctor-Led | Clinica Skin',
-  description: 'Doctor-led CO2 laser resurfacing in Cambridge. Smooth wrinkles, acne scars & sun damage with Dr. Katarzyna at Clinica Skin. Free consultation & SkinCeuticals scan. CQC-registered, award-winning clinic.',
+  description: 'Doctor-led CO2 laser resurfacing in Cambridge. Smooth wrinkles, acne scars & sun damage with Dr. Katarzyna at Clinica Skin. Free consultation & SkinCeuticals scan. Award-winning, doctor-led clinic.',
   keywords: 'CO2 laser Cambridge, acne scar treatment Cambridge, laser skin resurfacing, CO2 laser treatment, pigmentation treatment, wrinkle treatment, Clinica Skin, Dr Katarzyna, Cambridge aesthetics, laser resurfacing UK, CO2 laser acne scars, fractional laser Cambridge, doctor-led aesthetics',
   authors: [{ name: 'Clinica Skin Cambridge' }],
   creator: 'Clinica Skin Cambridge',
