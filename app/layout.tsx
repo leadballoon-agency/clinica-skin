@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Suspense } from 'react'
+import Script from 'next/script'
 import './globals.css'
 import StructuredData from '@/components/StructuredData'
 import FacebookPixel from '@/components/FacebookPixel'
@@ -82,6 +83,12 @@ export default function RootLayout({
         </Suspense>
         <StructuredData />
         {children}
+        <Script
+          src="https://followupsystems.co.uk/widget.js"
+          data-key="f44983f47f140f70e4a96744f334f597"
+          data-booking="https://link.co2lasercambridge.co.uk/widget/booking/wI8gdiR5RL5ghq6dzkn8"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
