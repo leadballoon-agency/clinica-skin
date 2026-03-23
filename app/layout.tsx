@@ -75,18 +75,28 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-GB">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var s = document.createElement('script');
+                s.src = 'https://followupsystems.co.uk/widget.js';
+                s.setAttribute('data-key', 'f44983f47f140f70e4a96744f334f597');
+                s.setAttribute('data-booking', 'https://link.co2lasercambridge.co.uk/widget/booking/wI8gdiR5RL5ghq6dzkn8');
+                s.defer = true;
+                document.head.appendChild(s);
+              })();
+            `
+          }}
+        />
+      </head>
       <body className={inter.className}>
         <Suspense fallback={null}>
           <FacebookPixel />
         </Suspense>
         <StructuredData />
         {children}
-        <Script
-          src="https://followupsystems.co.uk/widget.js"
-          data-key="f44983f47f140f70e4a96744f334f597"
-          data-booking="https://link.co2lasercambridge.co.uk/widget/booking/wI8gdiR5RL5ghq6dzkn8"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   )
