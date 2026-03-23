@@ -62,7 +62,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             className="w-full h-full object-contain"
           >
             <source
-              src="https://assets.cdn.filesafe.space/794ChihCjQ1xxrfjEcHu/media/69c0d8222275c1a8c57b4661.mov"
+              src="https://assets.cdn.filesafe.space/794ChihCjQ1xxrfjEcHu/media/69c0f69899a4e00b29cbe810.mp4"
               type="video/mp4"
             />
           </video>
