@@ -87,7 +87,7 @@ export default function RootLayout({
           src="https://followupsystems.co.uk/widget.js"
           data-key="f44983f47f140f70e4a96744f334f597"
           data-booking="https://link.co2lasercambridge.co.uk/widget/booking/wI8gdiR5RL5ghq6dzkn8"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>
