@@ -5,13 +5,22 @@ interface PremiumTreatmentsProps {
 export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsProps) {
   const treatments = [
     {
-      icon: '✨',
-      title: 'Face',
-      description: "Full-face CO2 laser rejuvenation",
-      features: ['Wrinkles, scarring & texture', '5-7 days downtime', '60-90 minutes', 'Free consultation included'],
-      price: '£795',
-      gradient: 'from-blue-400 to-cyan-600',
+      icon: '👁️',
+      title: 'Non-Surgical Blepharoplasty',
+      description: 'Eye rejuvenation — upper and lower',
+      features: ['Heavy/hooded eyelids', 'Under-eye bags & puffiness', 'Upper, lower or both', 'Not all clinics can offer this'],
+      price: 'From £400',
+      gradient: 'from-purple-400 to-purple-600',
       popular: false
+    },
+    {
+      icon: '✨',
+      title: 'Full Face CO2 Laser',
+      description: 'Complete facial rejuvenation',
+      features: ['Wrinkles, scarring & texture', 'Lower eye rejuvenation included', '60-90 minutes treatment', 'Free consultation & skin scan'],
+      price: '£795',
+      gradient: 'from-primary-400 to-primary-600',
+      popular: true
     },
     {
       icon: '💎',
@@ -19,16 +28,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
       description: 'Comprehensive treatment package',
       features: ['Face & neck rejuvenation', 'Tightens & improves texture', 'Natural-looking results', 'SkinCeuticals skin scan'],
       price: '£1,300',
-      gradient: 'from-primary-400 to-primary-600',
-      popular: true
-    },
-    {
-      icon: '🔬',
-      title: 'Face, Neck + Chest',
-      description: 'Full advanced rejuvenation',
-      features: ['Complete visible area treatment', 'Smoothness & elasticity', 'Maximum transformation', 'Doctor-led throughout'],
-      price: '£1,700',
-      gradient: 'from-green-400 to-emerald-600',
+      gradient: 'from-blue-400 to-cyan-600',
       popular: false
     }
   ]
@@ -57,7 +57,7 @@ export default function PremiumTreatments({ onBookingClick }: PremiumTreatmentsP
             >
               {treatment.popular && (
                 <div className="absolute -top-2 sm:-top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-3 sm:px-4 py-0.5 sm:py-1 rounded-full text-xs sm:text-sm font-medium">
-                  Best Value
+                  Most Popular
                 </div>
               )}
               
