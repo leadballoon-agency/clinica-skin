@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const FACEBOOK_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '1420040315939258'
+const FACEBOOK_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || '1386908349873329'
 const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 const TEST_MODE = process.env.NEXT_PUBLIC_META_PIXEL_TEST_MODE === 'true'
 
