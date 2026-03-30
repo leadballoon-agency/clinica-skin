@@ -10,10 +10,10 @@ export default function ResultsGallery({ onBookingClick }: ResultsGalleryProps) 
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
   const results = [
     {
-      image: '/images/co2laser-skin-rejeuvenation.jpeg',
-      title: 'Skin Resurfacing',
-      description: 'Complete skin rejuvenation, renewal and tightening',
-      time: 'Results Vary',
+      image: '/images/SkinScope-Selection-1-960x640-copy-2.jpg',
+      title: 'SkinCeuticals Skin Analysis',
+      description: 'Advanced digital skin scan included with every free consultation',
+      time: 'Complimentary',
       isAvailable: true,
       featured: true
     },
