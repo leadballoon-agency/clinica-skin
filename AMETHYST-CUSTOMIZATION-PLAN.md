@@ -43,7 +43,6 @@ The automation will look for and extract:
 - [ ] Full business description
 - [ ] Specialties and services offered
 - [ ] Years in business / establishment date
-- [ ] CQC registration number (if applicable)
 - [ ] Professional qualifications
 
 ### Contact Information

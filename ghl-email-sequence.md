@@ -81,7 +81,7 @@ CO2 laser creates thousands of microscopic channels in the skin, triggering your
 
 **Why Clinica Skin?**
 
-Every treatment at Clinica Skin is performed by our doctor-led team — not technicians. We're CQC-registered, with over 219 five-star Google reviews from real patients in Cambridge.
+Every treatment at Clinica Skin is performed by our doctor-led team — not technicians. We have over 219 five-star Google reviews from real patients in Cambridge.
 
 **Treatments start from just £795 for a full face.**
 
@@ -278,7 +278,6 @@ But if you're still thinking about it, here's a quick summary:
 **Why patients choose Clinica Skin Cambridge:**
 
 - Doctor-led treatments (not technician-led)
-- CQC-registered clinic
 - 219 five-star Google reviews
 - Free consultation with SkinCeuticals digital scan
 - Full face CO2 laser from £795

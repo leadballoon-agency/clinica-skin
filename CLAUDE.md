@@ -125,7 +125,7 @@ Uses `@/*` path alias mapping to project root (configured in tsconfig.json).
 - Doctor-led (GMC-registered)
 - Cambridge-trained
 - Free consultation + SkinCeuticals digital scan
-- CQC-registered & award-winning
+- Award-winning
 
 ## External Services
 
